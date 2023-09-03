@@ -1,0 +1,51 @@
+<h2>Inputs</h2>
+<mat-form-field appearance="outline">
+  <mat-label>Name</mat-label>
+  <input
+    type="text"
+    matInput
+    placeholder="Digite o seu nome"
+  />
+</mat-form-field>
+
+<!-- Segundo exemplo -->
+<mat-form-field floatLabel="auto">
+  <mat-label>Favorite food</mat-label>
+  <input
+    type="text"
+    matInput
+  />
+  <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+</mat-form-field>
+
+<!-- Utilizando two way data bind -->
+<mat-form-field class="example-form-field">
+  <mat-label>Limpa input</mat-label>
+  <input
+    matInput
+    type="text"
+    [(ngModel)]="value"
+  />
+  <button
+    *ngIf="value"
+    matSuffix
+    mat-icon-button
+    aria-label="Clear"
+    (click)="value = ''"
+  >
+    <mat-icon>close</mat-icon>
+  </button>
+</mat-form-field>
+
+<!-- Contando caracteres -->
+<mat-form-field floatLabel="auto">
+  <mat-label>Favorite food</mat-label>
+  <input
+    type="text"
+    matInput
+    #username
+    maxlength="10"
+  />
+  <mat-hint align="start">Apenas {{username.maxLength }} caracteres</mat-hint>
+  <mat-hint align="end">{{username.value.length}}/{{username.maxLength }}</mat-hint>
+</mat-form-field>

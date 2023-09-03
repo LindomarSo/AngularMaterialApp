@@ -1,0 +1,79 @@
+<h1>Simple Tabs</h1>
+<mat-tab-group
+  mat-align-tabs="start"
+  mat-stretch-tabs="false"
+  [disableRipple]="false"
+>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon class="mat-18">settings</mat-icon> Teste
+    </ng-template>
+    Content
+  </mat-tab>
+
+  <mat-tab label="Lazy Load">
+    <ng-template matTabContent> Content 1 - Loaded: </ng-template>
+  </mat-tab>
+</mat-tab-group>
+
+<br />
+<h1>Tabs - Stretch and Below</h1>
+<mat-tab-group
+  mat-stretch-tabs="true"
+  [disableRipple]="false"
+  class="mat-elevation-z5"
+  headerPosition="below"
+>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon class="mat-18">settings</mat-icon> Teste
+    </ng-template>
+    <h3>Olá mundo</h3>
+  </mat-tab>
+
+  <mat-tab label="Lazy Load">
+    <ng-template matTabContent>
+      <h3>Olá mundo</h3>
+    </ng-template>
+  </mat-tab>
+</mat-tab-group>
+
+<br />
+<h1>Tabs - Colors</h1>
+<mat-tab-group
+  mat-stretch-tabs="true"
+  [disableRipple]="false"
+  class="mat-elevation-z5"
+  headerPosition="below"
+  color="warn"
+  backgroundColor="primary"
+>
+  <mat-tab>
+    <div class="mat-tab">
+      <ng-template mat-tab-label>
+        <mat-icon class="mat-18">settings</mat-icon> Teste
+      </ng-template>
+      <h1>Settings</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo,
+        ipsam ex dolor corporis maiores, amet enim saepe adipisci minima tempora
+        deserunt quod illo officia odit quia recusandae sapiente quo asperiores.
+      </p>
+    </div>
+  </mat-tab>
+
+  <mat-tab label="Lazy Load">
+    <div class="mat-tab">
+      <ng-template mat-tab-label>
+        <mat-icon class="mat-18">person</mat-icon> Teste
+      </ng-template>
+      <h1>Person</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+        obcaecati, officia exercitationem porro doloremque, dolorum minima eius
+        sapiente eos, labore nostrum eaque fugit non dolores? Molestiae labore
+        cum ipsa culpa!
+      </p>
+    </div>
+  </mat-tab>
+</mat-tab-group>

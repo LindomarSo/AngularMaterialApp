@@ -1,0 +1,31 @@
+<div class="modal">
+  <div>
+    <h2>{{ data }}</h2>
+    <!-- <mat-dialog-content> -->
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. At mollitia quia
+      quod deserunt facilis eos obcaecati delectus voluptatibus fugiat, odit
+      corrupti adipisci nemo cumque cupiditate officiis ab provident similique
+      aperiam?
+    </p>
+    <!-- </mat-dialog-content> -->
+  </div>
+  <!-- <mat-dialog-actions> -->
+  <div class="btns">
+    <button
+    mat-raised-button
+    color="primary"
+    [mat-dialog-close]="obj"
+  >
+    Fechar
+  </button>
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="onClose()"
+  >
+    OnClose
+  </button>
+  </div>
+  <!-- </mat-dialog-actions> -->
+</div>

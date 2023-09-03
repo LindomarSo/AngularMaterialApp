@@ -1,0 +1,15 @@
+.modal{
+  border-top: 11px solid #3f51b5;
+  min-height: 140px;
+  width: 300px;
+  padding: 20px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+
+  .btns{
+    display: flex;
+    column-gap: 10px;
+  }
+}
